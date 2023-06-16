@@ -1,5 +1,7 @@
 package com.moov.Moov.model;
 
+import java.util.Date;
+
 import jakarta.persistence.Column;
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
@@ -14,7 +16,7 @@ public class TblBilling {
 	@Id
 	@GeneratedValue(strategy = GenerationType.AUTO)
 	@Column(name = "rowno")
-	private Integer rowno;
+	private Long rowno;
 
 	@Column(name = "ani")
 	private String ani;
@@ -32,7 +34,7 @@ public class TblBilling {
 	private String isprepaid;
 
 	@Column(name = "datetime")
-	private String datetime;
+	private Date datetime;
 
 	@Column(name = "recordstatus")
 	private Integer recordstatus;
@@ -53,7 +55,7 @@ public class TblBilling {
 	private String mode;
 
 	@Column(name = "process_datetime")
-	private String process_datetime;
+	private Date process_datetime;
 
 	@Column(name = "src")
 	private String src;
@@ -65,7 +67,7 @@ public class TblBilling {
 	private String serviceName;
 
 	@Column(name = "previous_process_date")
-	private String previous_process_date;
+	private Date previous_process_date;
 
 	@Column(name = "sysresponse")
 	private String sysresponse;
@@ -118,11 +120,11 @@ public class TblBilling {
 	@Transient
 	private Integer message_send_days;
 
-	public Integer getRowno() {
+	public Long getRowno() {
 		return rowno;
 	}
 
-	public void setRowno(Integer rowno) {
+	public void setRowno(Long rowno) {
 		this.rowno = rowno;
 	}
 
@@ -166,11 +168,11 @@ public class TblBilling {
 		this.isprepaid = isprepaid;
 	}
 
-	public String getDatetime() {
+	public Date getDatetime() {
 		return datetime;
 	}
 
-	public void setDatetime(String datetime) {
+	public void setDatetime(Date datetime) {
 		this.datetime = datetime;
 	}
 
@@ -222,11 +224,11 @@ public class TblBilling {
 		this.mode = mode;
 	}
 
-	public String getProcess_datetime() {
+	public Date getProcess_datetime() {
 		return process_datetime;
 	}
 
-	public void setProcess_datetime(String process_datetime) {
+	public void setProcess_datetime(Date process_datetime) {
 		this.process_datetime = process_datetime;
 	}
 
@@ -254,11 +256,11 @@ public class TblBilling {
 		this.serviceName = serviceName;
 	}
 
-	public String getPrevious_process_date() {
+	public Date getPrevious_process_date() {
 		return previous_process_date;
 	}
 
-	public void setPrevious_process_date(String previous_process_date) {
+	public void setPrevious_process_date(Date previous_process_date) {
 		this.previous_process_date = previous_process_date;
 	}
 
