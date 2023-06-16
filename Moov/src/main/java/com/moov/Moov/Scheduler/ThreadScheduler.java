@@ -4,11 +4,13 @@ import java.util.List;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
+import org.springframework.stereotype.Service;
 
 import com.moov.Moov.model.TblBilling;
 import com.moov.Moov.service.SubService;
 
 @Component
+@Service
 public class ThreadScheduler extends Thread {
 
 	@Autowired
