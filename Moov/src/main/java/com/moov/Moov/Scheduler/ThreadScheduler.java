@@ -20,6 +20,11 @@ public class ThreadScheduler extends Thread {
 			for (TblBilling e : bilList) {
 				System.out.println(e.getAni());
 			}
+			
+			
+			
+			
+			
 		}
 
 	}
