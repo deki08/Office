@@ -1,5 +1,9 @@
 package com.moov.Moov.repository;
 
-public interface ThreadRepo {
+import org.springframework.data.jpa.repository.JpaRepository;
+
+import com.moov.Moov.model.ThreadModel;
+
+public interface ThreadRepo  extends JpaRepository<ThreadModel, Long> {
 
 }

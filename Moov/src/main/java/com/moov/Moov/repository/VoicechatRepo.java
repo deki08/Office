@@ -1,5 +1,9 @@
 package com.moov.Moov.repository;
 
-public interface VoicechatRepo {
+import org.springframework.data.jpa.repository.JpaRepository;
+
+import com.moov.Moov.model.TblVoicechat;
+
+public interface VoicechatRepo extends JpaRepository<TblVoicechat, Long> {
 
 }
