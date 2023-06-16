@@ -15,9 +15,11 @@ public class ThreadScheduler extends Thread {
 	private SubService service;
 
 	public void subThread() {
-		List<TblBilling> bilList = service.findByRecordStatus(2);
-		for (TblBilling e : bilList) {
-			System.out.println(e.getAni());
+		List<TblBilling> bilList = service.findByRecordStatus(0);
+		if (bilList != null) {
+			for (TblBilling e : bilList) {
+				System.out.println(e.getAni());
+			}
 		}
 
 	}

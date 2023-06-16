@@ -85,7 +85,7 @@ public class TblBilling {
 	private String subscriber_id;
 
 	@Column(name = "subscription_time")
-	private String subscription_time;
+	private Date subscription_time;
 	
 	@Column(name = "sub_consent")
 	private String sub_consent;
@@ -360,11 +360,11 @@ public class TblBilling {
 		this.subscriber_id = subscriber_id;
 	}
 
-	public String getSubscription_time() {
+	public Date getSubscription_time() {
 		return subscription_time;
 	}
 
-	public void setSubscription_time(String subscription_time) {
+	public void setSubscription_time(Date subscription_time) {
 		this.subscription_time = subscription_time;
 	}
 
